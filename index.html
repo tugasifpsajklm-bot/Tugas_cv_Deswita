@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Deswita Maharani Putri</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Nunito:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #e0f2fe; /* Light Blue */
+            color: #1e293b;
+        }
+
+        h1, h2 {
+            font-family: 'Nunito', sans-serif;
+        }
+
+        /* Animasi Kelinci Bergerak Kanan-Kiri */
+        @keyframes bunnyMove {
+            0% { transform: translateX(0) scaleX(1); }
+            45% { transform: translateX(20px) scaleX(1); }
+            50% { transform: translateX(20px) scaleX(-1); }
+            95% { transform: translateX(0) scaleX(-1); }
+            100% { transform: translateX(0) scaleX(1); }
+        }
+
+        .bunny-animation {
+            display: inline-block;
+            animation: bunnyMove 3s ease-in-out infinite;
+            font-size: 2rem;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .section-title {
+            border-bottom: 3px solid #7dd3fc;
+            display: inline-block;
+            margin-bottom: 1rem;
+            padding-bottom: 0.2rem;
+        }
+
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border: 5px solid #bae6fd;
+            border-radius: 50%;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 640px) {
+            .profile-header {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body class="p-4 md:p-8">
+
+    <div class="max-w-4xl mx-auto">
+        <!-- Header & Profil -->
+        <header class="card p-8 mb-6 flex flex-col md:flex-row items-center gap-8">
+            <div class="relative">
+                <img src="WhatsApp Image 2026-02-08 at 20.59.31.jpeg" alt="Foto Deswita" class="profile-img">
+                <div class="absolute -bottom-2 -right-2 bunny-animation">🐰</div>
+            </div>
+            <div class="flex-1 text-center md:text-left">
+                <h1 class="text-3xl md:text-4xl font-bold text-sky-600">Deswita Maharani Putri</h1>
+                <p class="text-lg text-sky-500 font-semibold mb-4">Siswa SMA Karya Pembangunan Baleendah</p>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-sm">
+                    <p><strong>📅 Lahir:</strong> 03 Februari 2008</p>
+                    <p><strong>📞 Telp:</strong> 08901341048</p>
+                    <p><strong>📍 Alamat:</strong> Komo. Tirta Regency, Kec. Pameungpeuk, Kab. Bandung</p>
+                    <p><strong>📸 IG:</strong> @yyd3sptri_</p>
+                </div>
+            </div>
+        </header>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <!-- Kolom Kiri -->
+            <div class="md:col-span-1 space-y-6">
+                <!-- Tentang Saya -->
+                <section class="card p-6">
+                    <h2 class="section-title text-xl font-bold text-sky-700">Tentang Saya</h2>
+                    <p class="text-sm leading-relaxed">
+                        Saya seorang siswa SMA Karya Pembangunan Baleendah. Saya memiliki gairah dalam dunia kuliner, khususnya memasak dan baking cookies. Di waktu luang, saya sangat menikmati menonton film dan mendengarkan musik.
+                    </p>
+                </section>
+
+                <!-- Keahlian & Bahasa -->
+                <section class="card p-6">
+                    <h2 class="section-title text-xl font-bold text-sky-700">Keahlian</h2>
+                    <ul class="list-disc list-inside text-sm mb-4">
+                        <li>Memasak</li>
+                        <li>Baking Cookies</li>
+                    </ul>
+                    
+                    <h2 class="section-title text-xl font-bold text-sky-700">Bahasa</h2>
+                    <p class="text-sm">Bahasa Indonesia (Native)</p>
+                </section>
+
+                <!-- Hobby -->
+                <section class="card p-6">
+                    <h2 class="section-title text-xl font-bold text-sky-700">Hobby</h2>
+                    <div class="flex flex-wrap gap-2 mt-2">
+                        <span class="bg-sky-100 text-sky-700 px-3 py-1 rounded-full text-xs font-semibold">🎬 Menonton Film</span>
+                        <span class="bg-sky-100 text-sky-700 px-3 py-1 rounded-full text-xs font-semibold">🎵 Musik</span>
+                        <span class="bg-sky-100 text-sky-700 px-3 py-1 rounded-full text-xs font-semibold">👩‍🍳 Memasak</span>
+                    </div>
+                </section>
+            </div>
+
+            <!-- Kolom Kanan -->
+            <div class="md:col-span-2 space-y-6">
+                <!-- Pendidikan -->
+                <section class="card p-6">
+                    <h2 class="section-title text-xl font-bold text-sky-700">Riwayat Pendidikan</h2>
+                    <div class="space-y-4">
+                        <div class="flex items-start gap-4">
+                            <div class="bg-sky-500 text-white p-2 rounded-lg text-xs font-bold w-20 text-center">2026</div>
+                            <div>
+                                <h3 class="font-bold">SMA Karya Pembangunan Baleendah</h3>
+                                <p class="text-xs text-gray-500">Pendidikan Menengah Atas (Lulus Prediksi)</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="bg-sky-400 text-white p-2 rounded-lg text-xs font-bold w-20 text-center">2023</div>
+                            <div>
+                                <h3 class="font-bold">SMP (Sekolah Menengah Pertama)</h3>
+                                <p class="text-xs text-gray-500">Lulus Tahun 2023</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="bg-sky-300 text-white p-2 rounded-lg text-xs font-bold w-20 text-center">2020</div>
+                            <div>
+                                <h3 class="font-bold">SD (Sekolah Dasar)</h3>
+                                <p class="text-xs text-gray-500">Lulus Tahun 2020</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Pengalaman Organisasi -->
+                <section class="card p-6">
+                    <h2 class="section-title text-xl font-bold text-sky-700">Pengalaman Organisasi</h2>
+                    <div class="space-y-4">
+                        <div class="border-l-4 border-sky-400 pl-4">
+                            <h3 class="font-bold text-sky-600">Paskibra</h3>
+                            <p class="text-xs font-semibold">SMA | 2023 - 2026</p>
+                            <p class="text-sm mt-1 text-gray-600">Aktif sebagai anggota Paskibra di tingkat SMA, melatih kedisiplinan dan kerjasama tim.</p>
+                        </div>
+                        <div class="border-l-4 border-sky-300 pl-4">
+                            <h3 class="font-bold text-sky-600">Pramuka</h3>
+                            <p class="text-xs font-semibold">SD | Lulus 2020</p>
+                            <p class="text-sm mt-1 text-gray-600">Mengikuti kegiatan kepramukaan pada masa sekolah dasar.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Sertifikat -->
+                <section class="card p-6">
+                    <h2 class="section-title text-xl font-bold text-sky-700">Sertifikat</h2>
+                    <p class="text-sm italic text-gray-500">Belum ada sertifikat saat ini.</p>
+                </section>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="text-center mt-12 mb-8 text-sky-600">
+            <p class="text-sm">Dibuat dengan ❤️ untuk Deswita Maharani Putri</p>
+            <div class="mt-2 bunny-animation">🐇</div>
+        </footer>
+    </div>
+
+</body>
+</html>
